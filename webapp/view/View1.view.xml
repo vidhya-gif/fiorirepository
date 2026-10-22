@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.indexit.appsept.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+<content>
+ <Button id= "idButton1" text = "Click here" type= "Emphasized" press="onClick"/>
+ <Input id = "idInput"/>
+
+ <DatePicker id="_IDGenDatePicker" type= "bRenderingPhase" change = "onDP"/>
+ <DateRangeSelection id="_IDGenDateRangeSelection" />
+<DateTimePicker id="_IDGenDateTimePicker"/>
+
+
+
+    </content>
+    </Page>
+</mvc:View> 
