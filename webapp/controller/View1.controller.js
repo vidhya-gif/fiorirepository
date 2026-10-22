@@ -10,14 +10,17 @@ sap.ui.define([
         onInit() {
         }, 
         onClick(){
-            // MessageBox.show("Button clicked", {
-			// icon: MessageBox.Icon.INFORMATION,
-			// title: "my message box title",
-			// actions: [MessageBox.Action.YES, MessageBox.Action.NO],
-			// emphasizedAction: MessageBox.Action.YES,
-			// onClose: function (oAction) { / * do something * /}
-            // });
-            sap.m.MessageToast.show("Button clicked"); 
+
+            var userInput=this.getView().byId("idInput").getProperty("value");
+
+            MessageBox.show(userInput + " has clicked the button", {
+			icon: MessageBox.Icon.INFORMATION,
+			title: "my message box title",
+			actions: [MessageBox.Action.YES, MessageBox.Action.NO],
+			emphasizedAction: MessageBox.Action.YES,
+			onClose: function (oAction) { / * do something * /}
+            });
+            // sap.m.MessageToast.show("Button clicked"); 
 
         },
         onDP(oControlEvent){

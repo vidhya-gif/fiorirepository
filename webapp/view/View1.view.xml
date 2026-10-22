@@ -4,14 +4,21 @@
     <Page id="page" title="{i18n>title}">
 <content>
  <Button id= "idButton1" text = "Click here" type= "Emphasized" press="onClick"/>
- <Input id = "idInput"/>
+ <Input id = "idInput" placeholder = "Enter Your Name" type = "Text"/>
 
- <DatePicker id="_IDGenDatePicker" type= "bRenderingPhase" change = "onDP"/>
+ <DatePicker id="_IDGenDatePicker"  change = "onDP"/>
  <DateRangeSelection id="_IDGenDateRangeSelection" />
 <DateTimePicker id="_IDGenDateTimePicker"/>
 
 
 
+
     </content>
+    <footer>
+      <Bar>
+    
+
+      </Bar>
+    </footer>
     </Page>
 </mvc:View> 
