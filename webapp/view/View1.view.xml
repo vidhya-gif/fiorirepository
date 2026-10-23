@@ -10,13 +10,12 @@
  <DateRangeSelection id="_IDGenDateRangeSelection" />
 <DateTimePicker id="_IDGenDateTimePicker"/>
 
-
-
-
     </content>
     <footer>
-      <Bar>
-    
+      <Bar id="_IDGenBar">
+      <contentRight>
+       <Button id="_IDGenButton" text = "Save" type="Accept" press="onSave"/>
+      </contentRight>
 
       </Bar>
     </footer>

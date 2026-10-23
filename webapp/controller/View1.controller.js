@@ -26,5 +26,8 @@ sap.ui.define([
         onDP(oControlEvent){
        
         },
+        onSave(){
+       var userInput=this.getView().byId("idInput").setValue("cleaned the value");
+        }
     });
 });
