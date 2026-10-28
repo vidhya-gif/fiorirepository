@@ -27,8 +27,8 @@
 
 </Select>
 
-<Label id="idPhonenumber" text="{i18n>phoneNumber}" required = "true"/>
- <Input id="idInput2" placeholder = "{i18n>PHNO}" type = "Number"/> 
+<Label id="idPhonenumber" text="{i18n>phoneNumber}" required = "true" />
+ <Input id="idInput2" placeholder = "{i18n>PHNO}" type = "Number" liveChange = "onLiveChange" submit = "onSubmit"/> 
   <!-- <ComboBox>
   <items>
    <core:Item  key = "IN" text = "India"/>

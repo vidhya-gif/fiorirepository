@@ -66,6 +66,12 @@ sap.ui.define([
 			onClose: function (oAction) { / * do something * /}
             });
       
+        },
+        onLiveChange(oEvent){
+
+        },
+        onSubmit(oEvent){
+          //var InputValue = oEvent.getSource().getProperty("value");
         }
     });
 });
