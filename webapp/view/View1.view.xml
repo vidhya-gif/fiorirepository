@@ -3,12 +3,13 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
 <content>
+
 <Label id="_IDGenLabel" text="{i18n>cc}" required = "true"/>
  <!-- <Button id= "idButton1" text = "Click here" type= "Emphasized" press="onClick"/> -->
  <Input id="_IDGenInput1" placeholder = "{i18n>placeholder}" type = "Text" valueHelpRequest="onVHClick" showValueHelp="true"/>
 
  <Label id="_IDGenLabel1" text = "{i18n>labelcc}" required = "true"/>
- <Select id="_IDGenSelect">
+ <!-- <Select id="_IDGenSelect">
   <items>
    <core:Item id="_IDGenItem4" key = "IN" text = "India"/>
    <core:Item id="_IDGenItem3" key = "USA" text="United states of America"/>
@@ -17,9 +18,18 @@
 <core:Item id="_IDGenItem" key = "FR" text="France"/>
 
   </items>
- </Select>
+ </Select> -->
 
-  <ComboBox>
+
+<Select id="idSelect1" items = "{oCountryModel>/}">
+
+   <core:Item id="_IDGenItem"  key = "{oCountryModel>CountryName/}" text = "{oCountryModel>CountryCode}"/>
+
+</Select>
+
+<Label id="idPhonenumber" text="{i18n>phoneNumber}" required = "true"/>
+ <Input id="idInput2" placeholder = "{i18n>PHNO}" type = "Number"/> 
+  <!-- <ComboBox>
   <items>
    <core:Item  key = "IN" text = "India"/>
    <core:Item  key = "USA" text="United states of America"/>
@@ -27,16 +37,16 @@
 <core:Item  key = "DE" text="Germany"/>
 <core:Item  key = "FR" text="France"/>
  </items>
- </ComboBox>
+ </ComboBox> -->
 <!-- <Input id="_IDGenInput2" placeholder = "{i18n>placeholder}" type = "Text"/>
 <Input id="_IDGenInput3" placeholder = "{i18n>placeholder}" type = "Text"/>
 <Input id="_IDGenInput4" placeholder = "{i18n>placeholder}" type = "Text"/>
 <Input id="_IDGenInput5" placeholder = "{i18n>placeholder}" type = "Text"/> -->
 
- <DatePicker id="_IDGenDatePicker"  change = "onDP"/>
+ <!-- <DatePicker id="_IDGenDatePicker"  change = "onDP"/>
  <DateRangeSelection id="_IDGenDateRangeSelection" />
-<DateTimePicker id="_IDGenDateTimePicker"/>
-
+<DateTimePicker id="_IDGenDateTimePicker"/> -->
+  
     </content>
     <footer>
       <Bar id="_IDGenBar">

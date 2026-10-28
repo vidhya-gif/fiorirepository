@@ -2,8 +2,9 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageBox",
     "sap/m/MessageToast",
-    "sap/m/DatePicker"
-], (Controller,MessageBox,MessageToast,DatePicker) => {
+    "sap/m/DatePicker",
+    "sap/ui/model/json/JSONModel"
+], (Controller,MessageBox,MessageToast,DatePicker,JSONModel) => {
     "use strict";
 
     return Controller.extend("com.indexit.appsept.controller.View1", {
@@ -23,7 +24,13 @@ sap.ui.define([
             },
               {
                 "CountryName": "United States of America","CountryCode" : "USA"
-            }]
+            },
+           {
+            "CountryName" : "Russia" , "CountryCode" : "USSR"
+           }
+        ]
+     var oModel = new JSONModel(Country);
+     this.getView().setModel(oModel,"oCountryModel");
 
  }, 
         onClick(){
@@ -41,7 +48,7 @@ sap.ui.define([
 
         },
         onDP(oControlEvent){
-       
+           
         },
         onSave(oEvent){
        //var userInput=this.getView().byId("idInput").setValue("cleaned the value");
