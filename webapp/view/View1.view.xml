@@ -1,0 +1,52 @@
+<mvc:View controllerName="org.vidhya.myproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:core ="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+
+  <Button id ="idBtn" text = "Nav to Page2" press= "onNavigation"/> 
+
+    <Panel id="_IDGenPanel" headerText="Panel" expandable="true">
+    <content>
+    <Label id="idEmp" text="{i18n>Emp}" required = "true" />
+    <Input id="idInpName" placeholder="{i18n>EmpName}" required = "true" />
+    <Input id="idInpIn" placeholder="{i18n>EmpInfo}" required = "true" />
+    <Input id="idInpAdd" placeholder="{i18n>EmpAdd}" required = "true" />
+    <Input id="idInpPh" placeholder="{i18n>EmpPn}" required = "true" />
+    </content>
+    </Panel>
+      
+        <Panel id="_IDGenPanel4" headerText="Panel" expandable="true">
+    <content>
+    <Label  text="{i18n>Emp}" required = "true" />
+    <Input  placeholder="{i18n>EmpName}" required = "true" />
+    <Input placeholder="{i18n>EmpInfo}" required = "true" />
+    <Input  placeholder="{i18n>EmpAdd}" required = "true" />
+    <Input  placeholder="{i18n>EmpPn}" required = "true" />
+    </content>
+    </Panel>
+
+
+      <Panel id="_IDGenPanel2" headerText="Panel" expandable="true">
+    <content>
+    <Label  text="{i18n>Emp}" required = "true" />
+    <Input  placeholder="{i18n>EmpName}" required = "true" />
+    <Input  placeholder="{i18n>EmpInfo}" required = "true" />
+    <Input  placeholder="{i18n>EmpAdd}" required = "true" />
+    <Input  placeholder="{i18n>EmpPn}" required = "true" />
+    </content>
+    </Panel>
+      <Panel id="_IDGenPanel1" headerText="Panel" expandable="true">
+    <content>
+    <Label  text="{i18n>Emp}" required = "true" />
+    <Input placeholder="{i18n>EmpName}" required = "true" />
+    <Input  placeholder="{i18n>EmpInfo}" required = "true" />
+    <Input  placeholder="{i18n>EmpAdd}" required = "true" />
+    <Input  placeholder="{i18n>EmpPn}" required = "true" />
+    </content>
+    </Panel>
+
+   
+    </content>
+    </Page>
+</mvc:View>

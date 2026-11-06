@@ -1,0 +1,11 @@
+<mvc:View controllerName="org.vidhya.myproject.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:core ="sap.ui.core"
+    xmlns="sap.m">
+      <Page id="page2" title="{i18n>title2}">
+    <content>
+  
+  <Button id ="idNewbtn" text = "Nav to Page1" press= "onPress"/> 
+
+    </content>
+    </Page>
+</mvc:View>
