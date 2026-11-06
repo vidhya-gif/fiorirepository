@@ -68,10 +68,18 @@ sap.ui.define([
       
         },
         onLiveChange(oEvent){
-          hellooo;
+          
         },
         onSubmit(oEvent){
-          //var InputValue = oEvent.getSource().getProperty("value");
+          var InputValue = oEvent.getParameter("value");
+         //  var userInput=this.getView().byId("idInput2").getValue();
+         var regEx =/^\d{10}$/;
+
+         if(!regEx.test(InputValue)){
+             //MessageToast.show("Number is incorrect"); 
+             InputValue.setValueState(Error);
+             InputValue.setValueStateText("Number is incorrect");
+         }
         }
     });
 });
